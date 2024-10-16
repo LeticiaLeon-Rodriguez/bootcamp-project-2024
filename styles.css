@@ -1,0 +1,304 @@
+html {
+  height: 100%;
+}
+
+/* main green : #b2c59b*/
+
+body {
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: #b2c59b;
+  color: white;
+  padding: 0px 0px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+/* CSS for page footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(109, 109, 109);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* */
+
+p {
+  font-family: "Franklin Gothic Medium";
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.section-title {
+  font-family: Cambria;
+  font-size: 25px;
+}
+
+input[type="text"] {
+  height: 25%;
+  width: 60%;
+}
+
+/* add hover to nav bar */
+
+.nav-list li a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(109, 109, 109);
+  transition: width 0.3s ease;
+}
+
+.nav-list li a:hover::after {
+  width: 100%;
+}
+
+.page-logo a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.page-logo a:hover {
+  color: rgb(109, 109, 109);
+  transform: scale(1.05);
+}
+
+/* contain things in boxes on contact page*/
+
+#contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#contact-form input[type="submit"] {
+  width: auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#contact-info {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* add boxes to blog posts */
+
+.blog-post {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* make resume prettier */
+
+a[download] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b2c59b;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+a[download]:hover {
+  background-color: #7c9063;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.entry-title {
+  font-size: 20px;
+  color: #1d262f;
+  margin-bottom: 5px;
+}
+
+.entry-info {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.entry-description {
+  margin-bottom: 15px;
+}
+
+ul.languages-skill-list,
+ul.tools-skill-list,
+ul.course-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.languages-skill-list li,
+ul.tools-skill-list li,
+ul.course-list li {
+  background-color: #e0f7fa;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.resume-box {
+  max-width: 1000px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* add image and text in box to home page */
+
+.about {
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-text {
+  flex: 2;
+  margin-top: 10px;
+}
+
+/* portfolio box*/
+
+.project {
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 250px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-name,
+.project-description {
+  margin: 5px 0;
+}
